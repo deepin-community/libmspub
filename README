@@ -1,0 +1,11 @@
+libmspub is a library and a set of tools for reading and converting MS
+Publisher files.
+
+libmspub requires boost, icu, librevenge and zlib to build. Most up to
+date code is available from Git repository at libreoffice.org
+(https://gerrit.libreoffice.org/gitweb?p=libmspub.git) or the mirror at
+freedesktop.org (http://cgit.freedesktop.org/libreoffice/libmspub/). See
+http://wiki.documentfoundation.org/DLP/Libraries/libmspub for more
+information.
+
+The library is available under MPL 2.0 license.

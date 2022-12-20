@@ -1,0 +1,60 @@
+Source: libmspub
+Priority: optional
+Maintainer: Deepin Developer <deepin-dev@deepin.org>
+Uploaders: Deepin Packages Builder <packages@deepin.org>
+Build-Depends: autotools-dev,
+               debhelper (>= 10),
+               dh-autoreconf,
+               doxygen,
+               libboost-dev,
+               libicu-dev,
+               librevenge-dev (>= 0.0.1),
+               pkg-config,
+               zlib1g-dev
+Standards-Version: 3.9.4
+Section: libs
+Homepage: http://www.freedesktop.org/wiki/Software/libmspub
+
+Package: libmspub-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libmspub-0.1-1 (= ${binary:Version}),
+         libicu-dev,
+         librevenge-dev,
+         zlib1g-dev,
+         ${misc:Depends}
+Description: library for parsing the mspub file structure -- development
+ Libmspub is library providing ability to interpret and import mspub
+ diagrams into various applications.
+ .
+ This package contains the development files (headers, ...)
+
+Package: libmspub-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: library for parsing the mspub file structure -- documentation
+ Libmspub is library providing ability to interpret and import mspub
+ diagrams into various applications.
+ .
+ This package contains the documentation.
+
+Package: libmspub-0.1-1
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: library for parsing the mspub file structure
+ Libmspub is library providing ability to interpret and import mspub
+ diagrams into various applications.
+
+Package: libmspub-tools
+Section: utils
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: library for parsing the mspub file structure -- tools
+ Libmspub is library providing ability to interpret and import mspub
+ diagrams into various applications.
+ .
+ This package contains pub2xhtml and pub2raw.
